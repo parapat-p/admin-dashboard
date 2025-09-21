@@ -7,20 +7,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <div class="container"> <!-- container -->
 
+        <div class="header"> <!-- header -->
+            <div class="header-container">
+                <svg width="25" height="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                </svg>
+                <input type="text">
+                <svg class="icon" width="25" height="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                </svg>
+                <svg class="icon-profile" width="25" height="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                </svg>
+                <span id="profile-account"></span>
+            </div>
+            <div class="header-container">
+                <svg class="icon-profile" width="25" height="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                </svg>
+                <div class="profile-section">
+                    <svg class="icon-profile" width="50" height="50">
+                        <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="red" />
+                    </svg>                    
+                    <span class="header">@DummyName</span>
+                    <span class="content">Some Cool project</span>
+                </div>
+                <div class="button-section">
+                    <button id="New">New</button>
+                    <button id="Upload">Upload</button>
+                    <button id="Share">Share</button>
+                </div>
+            </div>
+        </div> <!-- /header -->
 
-        </div>
-        <div class="sidebar">
-            <div id="logo-dashbor">
+        <div class="sidebar"> <!-- sidebar -->
+            <div id="logo-dashboard"> <!-- logo -->
                 <svg width="100" height="100">
                     <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
                 </svg>
                 Dashboard
-            </div>
+            </div> <!-- /logo -->
 
-            <ul>
+            <ul> <!-- sidebar menu -->
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messasges</li>
@@ -30,105 +60,97 @@
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
-            </ul>
-        </div>
+            </ul> <!-- /sidebar menu -->
+        </div> <!-- /sidebar -->
 
-        <div class="contents-container">
-            <div class="project">
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Super Cool Project</span>
-                    <span class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
-                    </span>
-                </div>
-            </div>
-            <div class="annoucement-container">
-                <div class="card">
-                    <span class="header">Site Maintenance</span>
-                    <span class="content">
-                    dummy text
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Site Maintenance</span>
-                    <span class="content">
-                    dummy text
-                    </span>
-                </div>
-                <div class="card">
-                    <span class="header">Site Maintenance</span>
-                    <span class="content">
-                    dummy text
-                    </span>
-                </div>
-            </div>
-            <div class="trending-container">
-                <div class="card">
-                    <svg width="50" height="50">
-                        <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="red" />
-                    </svg>
-                    <span class="header">
-                        @DummyName
-                    </span>
-                    <span class="content">
-                        Some Cool project
-                    </span>
-                </div>
-                <div class="card">
-                    <svg width="50" height="50">
-                        <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="red" />
-                    </svg>
-                    <span class="header">
-                        @DummyName
-                    </span>
-                    <span class="content">
-                        Some Cool project
-                    </span>
-                </div>
-                <div class="card">
-                    <svg width="50" height="50">
-                        <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="red" />
-                    </svg>
-                    <span class="header">
-                        @DummyName
-                    </span>
-                    <span class="content">
-                        Some Cool project
-                    </span>
-                </div>
-            </div>
-        </div>
+        <div class="contents-container"> <!-- contents-container -->
 
-    </div>
+            <div class="project"> <!-- project section -->
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Super Cool Project</span>
+                    <span class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde saepe incidunt harum cum doloribus pariatur iste esse. A eos aspernatur numquam in et quae cumque temporibus dicta repudiandae dolorem?
+                    </span>
+                </div>
+            </div> <!-- /project section -->
+
+            <div class="annoucement-container"> <!-- announcement section -->
+                <div class="card">
+                    <span class="header">Site Maintenance</span>
+                    <span class="content">
+                        dummy text
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Site Maintenance</span>
+                    <span class="content">
+                        dummy text
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="header">Site Maintenance</span>
+                    <span class="content">
+                        dummy text
+                    </span>
+                </div>
+            </div> <!-- /announcement section -->
+
+            <div class="trending-container"> <!-- trending section -->
+                <div class="card">
+                    <svg class="icon-profile" width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <span class="header">@DummyName</span>
+                    <span class="content">Some Cool project</span>
+                </div>
+                <div class="card">
+                    <svg class="icon-profile" width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <span class="header">@DummyName</span>
+                    <span class="content">Some Cool project</span>
+                </div>
+                <div class="card">
+                    <svg class="icon-profile" width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <span class="header">@DummyName</span>
+                    <span class="content">Some Cool project</span>
+                </div>
+            </div> <!-- /trending section -->
+
+        </div> <!-- /contents-container -->
+
+    </div> <!-- /container -->
 </body>
 </html>
