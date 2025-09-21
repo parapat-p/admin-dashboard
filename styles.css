@@ -5,7 +5,8 @@
 }
 
 :root{
-  --profile-name : "Parapat Patc."
+  --profile-name : "Parapat Patc.";
+  font-size: 12px;
 }
 
 /* for grid and flexbox layout view */
@@ -24,7 +25,6 @@
 }
 
 #profile-account::before{
-  font-size: 12px;
   content: var(--profile-name);
   font-weight: bold;
 }
@@ -53,6 +53,17 @@
   margin-left: 10%;
 }
 
+button{
+  width: 70px;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(14, 127, 192);
+  font-weight: 500;
+
+}
+
 input[type=text]{
   width: 80%;
   border-radius: 10px;
@@ -69,6 +80,7 @@ input[type=text]{
   flex-direction: column;
   gap: 5px;
 }
+
 
 .search-bar, .profile-section{
   gap: 10px;
