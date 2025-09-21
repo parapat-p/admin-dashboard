@@ -11,28 +11,32 @@
 
         <div class="header"> <!-- header -->
             <div class="header-container">
-                <svg width="25" height="25">
-                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
-                </svg>
-                <input type="text">
-                <svg class="icon" width="25" height="25">
-                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
-                </svg>
-                <svg class="icon-profile" width="25" height="25">
-                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
-                </svg>
-                <span id="profile-account"></span>
+                <div class="search-bar">
+                    <svg width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <input type="text">
+                </div>
+                <div class="profile-header">
+                    <svg class="icon" width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <svg class="icon-profile" width="25" height="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
+                    </svg>
+                    <span id="profile-account"></span>                   
+                </div>
+
             </div>
             <div class="header-container">
-                <svg class="icon-profile" width="25" height="25">
-                    <circle cx="12.5" cy="12.5" r="10" stroke="green" stroke-width="4" fill="red" />
-                </svg>
                 <div class="profile-section">
                     <svg class="icon-profile" width="50" height="50">
                         <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="red" />
-                    </svg>                    
-                    <span class="header">@DummyName</span>
-                    <span class="content">Some Cool project</span>
+                    </svg>
+                    <div class="profile-info">
+                        <span class="header">@DummyName</span>
+                        <span class="content">Some Cool project</span>
+                    </div>                    
                 </div>
                 <div class="button-section">
                     <button id="New">New</button>

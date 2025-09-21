@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+  --profile-name : "Parapat Patc."
+}
+
 /* for grid and flexbox layout view */
 *{
   border: 1px solid red;  
@@ -19,6 +23,55 @@
   grid-row: 1/span 4;
 }
 
+#profile-account::before{
+  font-size: 12px;
+  content: var(--profile-name);
+  font-weight: bold;
+}
+
+
 .header{
+  grid-column: 2 /span 3;
+}
+
+.header-container{
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+}
+
+.button-section{
   grid-column: 2/span 3;
+}
+
+.button-section, .profile-section, .profile-header, .search-bar{
+  display: flex;
+  align-items: center;
+}
+
+.profile-header{
+  gap: 20px;
+  margin-left: 10%;
+}
+
+input[type=text]{
+  width: 80%;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.button-section, .search-bar{
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-bar, .profile-section{
+  gap: 10px;
+  margin-left: 3%;
+  padding: 5px;
 }
