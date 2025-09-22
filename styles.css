@@ -39,7 +39,7 @@
 
 .header-container ,.contents-container{
   display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  grid-template-columns: 3fr 1.5fr;
 }
 
 .button-section{
@@ -92,7 +92,14 @@ input[type=text]{
 }
 
 .contents-container{
+  background-color: rgb(235, 235, 244);
   grid-column: 2 / span 3;
+}
+
+.project > .card{
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .project{
