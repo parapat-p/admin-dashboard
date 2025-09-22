@@ -11,7 +11,7 @@
 
 /* for grid and flexbox layout view */
 *{
-  border: 1px solid red;  
+  /* border: 1px solid red;   */
 }
 
 
@@ -25,11 +25,28 @@
 .sidebar{
   grid-column: 1;
   grid-row: 1/span 4;
+  justify-content: center;
+}
+
+.sidebar > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
 }
 
 #profile-account::before{
   content: var(--profile-name);
   font-weight: bold;
+}
+
+#logo-dashboard{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 
@@ -97,9 +114,30 @@ input[type=text]{
 }
 
 .project > .card{
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+  padding-bottom: 50px;
+  border-left: 8px solid;
+  border-left-color: orange;
+  gap: 10px;
+}
+
+.project > .card > .header{
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.card > .icon-project-card {
+  display:flex;
+  position:absolute;
+  gap: 10px;
+  bottom: 5%;
+  right: 5%;
 }
 
 .project{
@@ -109,7 +147,7 @@ input[type=text]{
   grid-row: 1 / span 2;
   gap: 20px;
   padding: 1rem;
-  padding-top: 3rem;
+  padding-top: 50px;
 }
 
 #project-header{
