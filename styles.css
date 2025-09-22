@@ -14,9 +14,12 @@
   border: 1px solid red;  
 }
 
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar{
@@ -34,7 +37,7 @@
   grid-column: 2 /span 3;
 }
 
-.header-container{
+.header-container ,.contents-container{
   display: grid;
   grid-template-columns: 2fr 1.5fr;
 }
@@ -86,4 +89,26 @@ input[type=text]{
   gap: 10px;
   margin-left: 3%;
   padding: 5px;
+}
+
+.contents-container{
+  grid-column: 2 / span 3;
+}
+
+.project{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-row: 1 / span 2;
+  gap: 20px;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#project-header{
+  position:absolute;
+  top: 2%;
+  left: 1rem;
+  font-size: 16px;
+  font-weight: bold;
 }
