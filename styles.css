@@ -10,17 +10,11 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* for grid and flexbox layout view */
-*{
-  /* border: 1px solid red;   */
-}
-
-
-
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 5fr;
+    height: 100%;
 }
 
 .sidebar{
@@ -30,6 +24,7 @@
   font-weight: bold;
   grid-column: 1;
   grid-row: 1/span 3;
+  padding:20px;
 }
 
 .sidebar > ul {
@@ -108,7 +103,7 @@ button:hover{
 }
 
 input[type=text]{
-  width: 80%;
+  width: clamp(200px,80%,1000px);
   border-radius: 10px;
   background-color: lightgray;
 }
@@ -195,12 +190,12 @@ input[type=text]{
   display: flex;
   flex-direction: column;
   position:relative;
-  padding: 10px;
+  padding: 20px;
   background-color: white;
   margin: 5%;
   margin-top: 50px;
   border-radius: 10px;
-  gap: 5px;
+  gap: 10px;
   max-width: 250px;
   min-height: 400px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -223,6 +218,7 @@ input[type=text]{
   padding-bottom: 5px;
   width: clamp(200px,200px,200px);
   margin-left: 5px;
+  gap: 10px;
 }
 
 .card >.content{
@@ -233,11 +229,25 @@ input[type=text]{
 .trending-container{
   display: flex;
   flex-direction: column;
+  position:relative;
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   max-width: 250px;
   margin: 5%;
-  margin-top: 0;
   padding: 10px;
+}
+
+#trending-header{
+  position:absolute;
+}
+
+
+/* Icon image setting */
+svg {
+color: white;  
+}
+
+.icon-profile{
+  border-radius: 50%;
 }
