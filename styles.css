@@ -7,6 +7,7 @@
 :root{
   --profile-name : "Parapat Patc.";
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* for grid and flexbox layout view */
@@ -24,18 +25,29 @@
 
 .sidebar{
   grid-column: 1;
-  grid-row: 1/span 4;
-  justify-content: center;
+  grid-row: 1/span 3;
 }
 
 .sidebar > ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 5%;
 }
 
 li {
+  display:flex;
+  gap:10px;
+  align-items: center;
   list-style: none;
+}
+
+#logo-dashboard, li {
+  margin-left: 10%;
+}
+
+li:nth-child(7){
+  margin-top: 10%;
 }
 
 #profile-account::before{
@@ -51,7 +63,10 @@ li {
 
 
 .header{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-column: 2 /span 3;
+  grid-row: 1 / span 2;
 }
 
 .header-container ,.contents-container{
@@ -60,7 +75,7 @@ li {
 }
 
 .button-section{
-  grid-column: 2/span 3;
+  grid-column: 2 / span 3;
 }
 
 .button-section, .profile-section, .profile-header, .search-bar{
@@ -79,9 +94,13 @@ button{
   border-radius: 20px;
   font-size: 1rem;
   color: white;
-  background-color: rgb(14, 127, 192);
+  background-color: rgb(32, 156, 227);
   font-weight: 500;
+  border: none;
+}
 
+button:hover{
+  border: solid 1px black;
 }
 
 input[type=text]{
@@ -132,6 +151,15 @@ input[type=text]{
   font-size: 16px;
 }
 
+.annoucement-container > .card > .header{
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.annoucement-container > .card > .content{
+  font-size: 10px;
+}
+
 .card > .icon-project-card {
   display:flex;
   position:absolute;
@@ -150,10 +178,49 @@ input[type=text]{
   padding-top: 50px;
 }
 
+
+
+#announcement-header, #project-header{
+    position:absolute;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.annoucement-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  padding: 10px;
+  background-color: white;
+  margin: 5%;
+  margin-top: 50px;
+  border-radius: 10px;
+  gap: 5px;
+  max-width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 #project-header{
-  position:absolute;
-  top: 2%;
+  top: 20px;
   left: 1rem;
-  font-size: 16px;
-  font-weight: bold;
+}
+
+#announcement-header{
+  top: -28px;
+}
+
+.annoucement-container > .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+  width: clamp(200px,200px,200px);
+  margin-left: 5px;
+}
+
+.card >.content{
+  flex: 1;
+  color: gray;
 }
