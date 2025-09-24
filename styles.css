@@ -24,6 +24,10 @@
 }
 
 .sidebar{
+  background-color: rgb(32, 156, 227);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   grid-column: 1;
   grid-row: 1/span 3;
 }
@@ -62,7 +66,7 @@ li:nth-child(7){
 }
 
 
-.header{
+.header-banner{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-column: 2 /span 3;
@@ -198,6 +202,7 @@ input[type=text]{
   border-radius: 10px;
   gap: 5px;
   max-width: 250px;
+  min-height: 400px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -223,4 +228,16 @@ input[type=text]{
 .card >.content{
   flex: 1;
   color: gray;
+}
+
+.trending-container{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 250px;
+  margin: 5%;
+  margin-top: 0;
+  padding: 10px;
 }
