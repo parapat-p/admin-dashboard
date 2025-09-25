@@ -221,7 +221,7 @@ input[type=text]{
   gap: 10px;
 }
 
-.card >.content{
+.card >.content, .text-container > .content{
   flex: 1;
   color: gray;
 }
@@ -235,13 +235,33 @@ input[type=text]{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   max-width: 250px;
   margin: 5%;
-  padding: 10px;
+  padding: 20px;
+  padding-left: 15px;
+  min-height: 200px;
+  gap: 10px;
 }
 
 #trending-header{
   position:absolute;
+  top: -28px;
+  font-size: 16px;
+  font-weight: bold;
+  
 }
 
+.trending-container > .card {
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 10px;
+}
+
+.card > .text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 /* Icon image setting */
 svg {
